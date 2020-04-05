@@ -1,6 +1,11 @@
-package com.ft.gmall.user.bean;
+package com.ft.gmall.api.bean;
 
-public class UmsMemberReceiveAddress {
+import javax.persistence.Id;
+import java.io.Serializable;
+
+public class UmsMemberReceiveAddress implements Serializable {
+
+    @Id
     private String id;
     private String memberId;
     private String  name;
@@ -11,38 +16,6 @@ public class UmsMemberReceiveAddress {
     private String city;
     private String region;
     private String detailAddress;
-
-    public UmsMemberReceiveAddress() {
-    }
-
-    public UmsMemberReceiveAddress(String id, String memberId, String name, String phoneNumber, int defaultStatus, String postCode, String province, String city, String region, String detailAddress) {
-        this.id = id;
-        this.memberId = memberId;
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.defaultStatus = defaultStatus;
-        this.postCode = postCode;
-        this.province = province;
-        this.city = city;
-        this.region = region;
-        this.detailAddress = detailAddress;
-    }
-
-    @Override
-    public String toString() {
-        return "UmsMemberReceiveAddress{" +
-                "id='" + id + '\'' +
-                ", memberId='" + memberId + '\'' +
-                ", name='" + name + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", defaultStatus=" + defaultStatus +
-                ", postCode='" + postCode + '\'' +
-                ", province='" + province + '\'' +
-                ", city='" + city + '\'' +
-                ", region='" + region + '\'' +
-                ", detailAddress='" + detailAddress + '\'' +
-                '}';
-    }
 
     public String getId() {
         return id;

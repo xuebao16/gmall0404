@@ -1,8 +1,8 @@
 package com.ft.gmall.user.service.impl;
 
-import com.ft.gmall.user.bean.UmsMember;
+import com.ft.gmall.api.bean.UmsMember;
+import com.ft.gmall.api.service.UserService;
 import com.ft.gmall.user.mapper.UmsMemberMapper;
-import com.ft.gmall.user.service.api.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;

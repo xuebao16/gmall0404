@@ -1,77 +1,31 @@
-package com.ft.gmall.user.bean;
+package com.ft.gmall.api.bean;
 
+import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 
-public class UmsMember {
+public class UmsMember implements Serializable {
+
+    @Id
     private String id;
-    private String memberLevelId;
+    private String         memberLevelId;
     private String username;
-    private String password;
+    private String         password;
     private String nickname;
-    private String phone;
+    private String         phone;
     private int status;
     private Date createTime;
     private String icon;
-    private int gender;
+    private int         gender;
     private Date birthday;
-    private String city;
+    private String        city;
     private String job;
-    private String personalizedSignature;
+    private String         personalizedSignature;
     private int sourceType;
-    private int integration;
+    private int         integration;
     private int growth;
-    private int luckeyCount;
+    private int         luckeyCount;
     private int historyIntegration;
-
-    public UmsMember() {
-    }
-
-    @Override
-    public String toString() {
-        return "UmsMember{" +
-                "id='" + id + '\'' +
-                ", memberLevelId='" + memberLevelId + '\'' +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", nickname='" + nickname + '\'' +
-                ", phone='" + phone + '\'' +
-                ", status=" + status +
-                ", createTime=" + createTime +
-                ", icon='" + icon + '\'' +
-                ", gender=" + gender +
-                ", birthday=" + birthday +
-                ", city='" + city + '\'' +
-                ", job='" + job + '\'' +
-                ", personalizedSignature='" + personalizedSignature + '\'' +
-                ", sourceType=" + sourceType +
-                ", integration=" + integration +
-                ", growth=" + growth +
-                ", luckeyCount=" + luckeyCount +
-                ", historyIntegration=" + historyIntegration +
-                '}';
-    }
-
-    public UmsMember(String id, String memberLevelId, String username, String password, String nickname, String phone, int status, Date createTime, String icon, int gender, Date birthday, String city, String job, String personalizedSignature, int sourceType, int integration, int growth, int luckeyCount, int historyIntegration) {
-        this.id = id;
-        this.memberLevelId = memberLevelId;
-        this.username = username;
-        this.password = password;
-        this.nickname = nickname;
-        this.phone = phone;
-        this.status = status;
-        this.createTime = createTime;
-        this.icon = icon;
-        this.gender = gender;
-        this.birthday = birthday;
-        this.city = city;
-        this.job = job;
-        this.personalizedSignature = personalizedSignature;
-        this.sourceType = sourceType;
-        this.integration = integration;
-        this.growth = growth;
-        this.luckeyCount = luckeyCount;
-        this.historyIntegration = historyIntegration;
-    }
 
     public String getId() {
         return id;

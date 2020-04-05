@@ -1,6 +1,6 @@
-package com.ft.gmall.user.service.api;
+package com.ft.gmall.api.service;
 
-import com.ft.gmall.user.bean.UmsMember;
+import com.ft.gmall.api.bean.UmsMember;
 
 import java.util.List;
 
